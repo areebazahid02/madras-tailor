@@ -1,0 +1,625 @@
+
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+  }
+  body{
+    overflow-x: hidden;
+  }
+  /* === Sub-header section === */
+.sub-header{
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background: url("./images/imghome2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.sub-header::after{
+  content: "";
+  position: absolute;
+  inset:0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+/* Container above overlay */
+.header-container{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Logo */
+.logo img{
+  height: 60px;
+  object-fit: contain;
+}
+
+/* NAV BAR */
+nav{
+position: fixed;
+top:0;
+width: 100%;
+background: rgba(10, 17, 36, 0.85);
+backdrop-filter: blur(1px);
+ -webkit-backdrop-filter: blur(1px); /* Safari support */
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:15px 8%;
+}
+
+nav ul{
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background-color: #081b29;
+}
+nav ul li:hover{
+  background-color: #01dbc2;
+}
+
+nav ul li a{
+  color: #ddd;
+  font-size: 16px;
+  text-decoration: none;
+}
+.menu-link {
+    color: #fff;
+    background-color: #e14073;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: none;
+
+}
+.mobile-book, .close-btn{
+  display: none;
+}
+
+
+
+
+/*--booking div under navbar--*/
+.book-div{
+  background-color: #e14073;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+
+}
+.book-div:hover{
+  transform: scale(1.1);
+  background-color: #8f2a4a;
+}
+.book-div a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+/* === TEXT BOX (Perfect Center) === */
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 55%;                 /* 👈 nav ke niche adjust */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+}
+
+.text-box h1{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.text-box p{
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.text-box a{
+  border: 2px solid #081b29;
+  background-color:  #e14073;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.text-box a:hover{
+  background-color: #8f2a4a;
+  transform: scale(1.1);
+}
+
+
+     /*---Section-Our-Services---*/
+     #crafting-div{
+       width: 100%;
+       background-color: #f1f1f1;
+       color: #fff;
+       padding:10px 10%;
+       text-align: center;
+      
+     }
+     .our-services{
+        text-align: center;
+        
+        
+     }
+     .our-services h2{
+        font-size: 2rem;
+        padding: 10px;
+        font-weight: 600; 
+        color:#081b29;
+     }
+    .our-services p{
+        color: #ddd;
+        background-color: #081b29;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 22px;
+        padding :10px;
+     }
+     .row{
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+     }
+      .service-col{
+         flex-basis: 31%;
+         background: #122a3b;
+         border-radius: 10px;
+         margin-bottom: 5%;
+         padding: 20px 12px;
+         box-sizing: border-box;
+         transition: 0.5s;
+      }
+      h3{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      .service-col p{
+        color: #ddd;
+        background-color: #122a3b;
+      }
+       .service-col:hover{
+        box-shadow: 0 0 20px 0px #112330;
+       }
+
+
+       /*section-our-collection*/
+        #product{
+        
+         text-align: center;
+         background-color: #f1f1f1;
+         color: #fff;
+         padding:10px 10%;
+        }
+        #product h2{
+          padding-top: 20px;
+          color: #081b29;
+          font-weight: 600;
+          font-size: 2rem;
+        }
+        .view{
+          margin-bottom: 40px;
+          
+        }
+        .view a{
+          background-color: #081b29;
+          padding: 10px 20px;
+          border-radius: 30px;
+          color: #fff;
+          transition: all ease 0.3s;
+        }
+        .view a:hover{
+          background-color: #e14073;
+          transform: scale(1.1);
+        }
+
+     
+         #product .product-container{
+        margin:40px 0;
+        display:grid;
+       grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap:25px;
+        }
+
+
+
+    #product .product-col{
+
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+     
+
+    }
+    .product-text{
+      color: #0a1124;
+    }
+ 
+ #product .product-col img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+ #product .product-col:hover{
+    box-shadow:20px 20px 30px rgba(0,0,0,0.06) ;
+ }
+
+   
+     /*--visit Us Section---*/
+     .visit-us{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+      background:#081b29;
+      color: #fff;
+
+
+     }
+     .visit-us a{
+       display: inline-block;
+       border-radius: 2px solid #e14073;
+       padding:12px 34px;
+       margin-top: 30px;
+       margin-bottom: 30px;
+       font-size: 15px;
+       font-weight: 400;
+       text-decoration: none;
+       background: #e14073;
+       color: #fff;
+       cursor: pointer;
+     }
+
+
+ 
+
+
+
+/*--whats app chat box button--*/
+  #whatsapp-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+#chat-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+#chat-icon img:hover {
+    transform: scale(1.1);
+}
+
+#chat-message {
+    display: none; /* initially hidden */
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#chat-message a {
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #fff;
+    color: #25d366;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#chat-message a:hover {
+    background-color: #f1f1f1;
+}
+/*--niche footer section me contact ke information ka section hai--*/
+#contact{
+    width: 100%;
+   min-height: 50vh;
+    background-color: #081b29;
+    color: #fff;
+    padding:10px 10%;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+    gap: 30px;
+}
+.info p {
+    color: #fff;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.info a{
+    color: #fff;
+}
+/*--footer--*/
+   
+.copyright{
+    padding:20px 10%;
+    border:1px solid #3e3c3c;
+    background-color: #081b29;
+    text-align: center;
+
+
+}
+.copyright p{
+    padding: 5px;
+    color: #ddd;
+}
+
+   
+
+   /*-- media queari mobile view nav bar---*/
+   /* 📱 MOBILE VIEW */
+@media (max-width: 768px) {
+
+  /* Nav */
+ nav{
+  padding:12px 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+
+ .menu-link{
+  display: block;
+  font-size: 26px;
+  color: #fff;
+  background-color: #e14073;
+  cursor: pointer;
+ }
+
+ .book-div{
+  display: none;
+ }
+ .nav-links{
+  display: none;
+ }
+  
+  .nav-links.active{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: #0a1124;
+    padding: 20px;
+    gap: 25px;
+    border-radius: 10px;
+    z-index: 99999;
+  
+  }
+.nav-links li{
+  list-style: none;
+  width: 50%;
+  text-align: center;
+}
+.nav-links a{
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+  /* Close button */
+  .close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #e14073;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: block;
+  }
+
+  /* Booking inside menu */
+  .mobile-book{
+    transition: all 0.3s ease;
+    background-color: #e14073;
+     padding: 12px 25px;
+    border-radius: 25px;
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+  
+  }
+  .mobile-book a{
+    color: #fff;
+    font-size: 22px;
+  }
+  .mobile-book:hover{
+    background-color: #8f2a4a;
+    transform: scale(1.1);
+  }
+  .text-box{
+    z-index: -3;
+  }
+  
+  /*--text box welcome madras wali--*/
+    
+
+  /* --- Our Services --- */
+  .ourservices{
+    width: 95%;
+    padding-top: 50px;
+  }
+
+  .row{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-col{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service-col h3{
+    font-size: 18px;
+  }
+
+  .ourservices p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* --- Collection / Product --- */
+  #product .product-container{
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  #product .product-col{
+   
+    margin: 10px 0;
+    padding: 10px;
+    
+  }
+  #product .product-col img{
+    width: 100%;
+    height: 300px;      /* mobile ke liye fixed height */
+    object-fit: cover; /* equal + clean look */
+  }
+
+    /* --- Contact / About / Support spacing fix */
+/* Footer--*/
+  #contact{
+    width: 100%;
+    padding: 20px 15px;
+
+    
+  }
+  .contact-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap:25px;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 15px;
+  }
+   .contact-info .info{
+    width: 100%;
+  }
+
+  .contact-info h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .contact-info p{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 6px 0;
+    color: #a8a4a4;
+  }
+
+  .social-icon{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .social-icon i{
+    font-size: 22px;
+  }
+
+}
+ 
+  
+ 
+
+   
+
+
+
+
+
+
+
+  
+
+
+ 
+
+
+
+
+
+
+
+  
+
+

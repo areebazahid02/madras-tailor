@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADRAS TAILOR</title>
+    <link rel="stylesheet" href="./aboutus.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!--section row start-->
+       <div class="sub-header">
+     <div class="header-container">
+       
+     <nav>
+             <div class="logo">
+            <img src="./images/madrasLOGO.png" alt="img-logo">
+        </div>
+              <!--  MENU ICON (ul ke bahar) -->
+      <div class="menu-link" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+        <ul class="nav-links">
+            <!--closs icon-->
+            <div class="close-btn" onclick="toggleMenu()"><i class="fa-solid fa-xmark"></i></div>
+            <!--close hogya is li aur iconse -->
+            <!--ul li start ho rhi hhai-->
+            <li><a href="./index.html" target="_self">Home</a></li>
+            <li><a href="./aboutus.html" target="_self">About</a></li>
+            <li><a href="./contactus.html" target="_self">Contact </a></li>
+            <li><a href="./bookstitiching.html" target="_self">Services </a></li>
+            <!--mobile me show hoga yeh booking -->
+            <div class="mobile-book"><a href="./bookstitiching.html">Booking</a></div>
+        </ul>
+        <div class="book-div">
+        <a href="./bookstitiching.html" target="_self">Booking </a>
+        </div>
+      
+        </nav>
+    </div>
+    </div>
+   <!--about section div start-->
+<section id="about-intro" class="section-p1-m1">
+    <div class="about-div">
+  <h1>About Madras Tailor's</h1>
+  <p>Welcome to Madras Tailor, where quality, precision, and style come together.We specialize in premium gents' tailoring, offering custom stitching, alterations, and perfectly fitted garments for every occasion.</p>
+  </div>
+  <div class="about-container">
+    <!-- Founder Block -->
+    <div class="about-block">
+      <div class="about-img">
+        <img src="images/dadababu.jpg">
+</div>
+
+      <div class="about-text">
+        <h1>Founder (1967)</h1>
+        <h2>Master Nanne Kha</h2>
+  
+
+        <p>
+          Madras Tailor’s was founded in 1967 by Master Nanne Kha, A Master craftsman 
+          known for his dedication, skill, and passion for perfect tailoring.
+        </p>
+
+        <p>
+          From traditional wear to modern outfits, Madras Tailor’s has always focused 
+          on precision, comfort, and timeless style.
+        </p>
+      </div>
+    </div>
+
+    <!-- CEO Block -->
+    <div class="about-block">
+      <div class="about-img">
+        <img src="./images/papaMTNEWCEO.jpg">
+      </div>
+
+      <div class="about-text">
+        <h1>Present CEO</h1>
+        <h2> Master Zahid Khan</h2>
+
+        <p>
+          Today, Madras Tailor’s is proudly led by Zahid Khan, who carries forward the 
+          legacy with a modern vision.
+        </p>
+
+        <p>
+          With innovation, quality, and customer trust at the core, Zahid Khan is 
+          guiding Madras Tailor’s into a new era of style.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+        <!--visit-us -section-->
+<section class="visit-us">
+    <h3><b>Your Style ,Your Fit,Your Tailor</b></h3>
+    <a href="contactus.html">Contact Now</a>
+</section>
+       
+    <!--section  Footer contact info-->
+         <footer>
+          <section Id="contact"  class="section-p1-m1">
+            <div class="contact-info">
+               
+            <div class="info">
+                  <h4>Support</h4>
+                <a href="contactus.html" target="_self"> <p>Contact us</p></a>
+                <a href="aboutus.html" target="_self" > <p> About Page</p></a>
+                  <p>Size Guide </p>
+                
+            </div>
+            <div class="info">
+                <h4> Stitching</h4>
+                <p>Men's Stiching</p>
+                <p> Casual Dresses</p>
+                <p> Formal</p>
+                <p>Dresses</p>
+                <p>Party Wear</p>
+            </div>
+            <div class="info">
+                 <h4>GET IN TOUCH</h4>
+                <p>Ajit Nager Gate Kheriya Mode<br> Vip Road Agra</p>
+                <p>7217472339</p>
+                <p>madrastailor@gmail.com</p>
+                <div class="social-icon">
+                <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+                 <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--copy right section-->
+        <section class="copyright">
+            <p><span>©</span> 2025 Madras Tailor's. All Rights Reserved.</p>
+            <p> SOFTCODE  <span>AREEBA ZAHID </span> </p>
+        </section>
+
+</footer>
+    
+     
+        
+
+
+        <!--whatsapp chat box-->
+       <section>
+<div id="whatsapp-chat">
+    <div id="chat-message">
+        <p>Hello! For any Queries ? Chat with us on WhatsApp.</p>
+        <a href="https://wa.me/7217472339" target="_blank">Start Chat</a>
+ </div>
+    <div id="chat-icon">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Chat"/>
+    </div>
+</div>
+
+       </section>
+       <!--javascrip toggele menu--> 
+    <script>
+        let navlinks = document.querySelector(".nav-links");
+        function toggleMenu(){
+            navlinks.classList.toggle("active");
+        }
+        /*---chat box---*/
+        const chatIcon = document.getElementById("chat-icon");
+        const chatMessage = document.getElementById("chat-message");
+
+       chatIcon.addEventListener("click", () => {
+            if(chatMessage.style.display === "block") {
+                   chatMessage.style.display = "none";
+          } else {
+                  chatMessage.style.display = "block";
+       }
+    });
+    </script>
+</body>
+</html>

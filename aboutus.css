@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body{
+  overflow-x: hidden;
+}
+
+/*---section header--*/
+.sub-header{
+  width: 100%;
+ 
+}
+
+/* Dark overlay */
+
+
+
+/* Container above overlay */
+.header-container{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 12vh;
+  background-color: #081b29;
+
+}
+
+/* Logo */
+.logo img{
+  height: 60px;
+  object-fit: contain;
+}
+
+/* NAV BAR */
+nav{
+position: fixed;
+top:0;
+width: 100%;
+background: rgba(10, 17, 36, 0.85);
+backdrop-filter: blur(4px);
+ -webkit-backdrop-filter: blur(1px); /* Safari support */
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:15px 8%;
+z-index: 9999;
+}
+
+nav ul{
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 8px 18px;
+  border-radius: 30px;
+  
+}
+nav ul li:hover{
+  background-color: #01dbc2;
+
+}
+
+nav ul li a{
+  color: #ddd;
+  font-size: 16px;
+  text-decoration: none;
+}
+.menu-link{
+    color: #fff;
+    background-color: #e14073;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: none;
+  
+
+}
+.mobile-book,.close-btn{
+  display: none;
+}
+.book-div{
+  background-color: #e14073;
+  padding:10px 20px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+.book-div:hover{
+  transform: scale(1.05);
+  background-color:#8f2a4a ;
+  color: #fff;
+}
+.book-div a{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+  .section-p1-m1{
+     padding: 20px;
+  }
+
+/*  Section before footer spacing fix */
+
+  .section-p1-m1:last-child{
+    margin-bottom: 0;
+}
+
+ 
+  /*--section about aboutntro---*/
+  #about-intro{
+    min-height: calc(100vh - 12vh);
+    background: linear-gradient(
+    120deg,
+    #0f2027,
+    #203a43,
+    #2c5364,
+    #081b29,
+    #0f2027,
+    #3e3c3c
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+
+    color: #081b29;
+  }
+  
+  
+  .about-div{
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    color: #f1f1f1;
+    
+
+  }
+  .about-div p{
+    line-height: 2rem;
+    font-size: 16px;
+    color: #a8a4a4;
+    text-align: center;
+
+  }
+
+.about-container{
+  display: flex;
+  flex-direction: column;   /* 👈 blocks vertical */
+  align-items: center;
+  gap: 50px;
+  
+}
+
+.about-block{
+  display: flex;
+  flex-direction: column;   /* 👈 image + text vertical */
+  align-items: center;
+  text-align: center;
+  max-width: 900px;
+  border: 1px solid #868484;
+  padding:12px;
+  border-radius: 20px;
+  color: #f1f1f1;
+}
+
+.about-img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;   /* 👈 text se gap */
+}
+
+.about-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid #8f2a4a;
+}
+
+.about-text h1{
+  margin: 10px 0 5px;
+}
+.about-text p{
+  line-height: 2rem;
+  color: #a8a4a4;
+}
+
+.about-text h2{
+  margin: 0 0 15px;
+}
+
+
+
+       /*--visit Us Section---*/
+     .visit-us{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+      background:#081b29;
+      color: #fff;
+
+
+     }
+     .visit-us h3{
+      font-size: 22px;
+     }
+     .visit-us a{
+       display: inline-block;
+       border-radius: 2px solid #e14073;
+       padding:12px 34px;
+       margin-top: 30px;
+       margin-bottom: 30px;
+       font-size: 15px;
+       font-weight: 500;
+       text-decoration: none;
+       background: #e14073;
+       color: #fff;
+       cursor: pointer;
+     }
+
+ 
+ /*-- Section Contact Info--*/
+ /*--niche footer section me contact ke information ka section hai--*/
+#contact{
+    width: 100%;
+   min-height: 50vh;
+    background-color: #081b29;
+    color: #fff;
+    padding:10px 10%;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10%;
+    gap: 30px;
+}
+.info p {
+    color: #fff;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.info a{
+    color: #fff;
+}
+/*--footer--*/
+   
+.copyright{
+    padding:20px 10%;
+    border:1px solid #3e3c3c;
+    background-color: #081b29;
+    text-align: center;
+
+
+}
+.copyright p{
+    padding: 5px;
+    color: #ddd;
+}
+/*--whats app chat box button--*/
+    #whatsapp-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+#chat-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+#chat-icon img:hover {
+    transform: scale(1.1);
+}
+
+#chat-message {
+    display: none; /* initially hidden */
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#chat-message a {
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #fff;
+    color: #25d366;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#chat-message a:hover {
+    background-color: #f1f1f1;
+}
+ /*--copy right--*/
+
+
+
+
+     /* 📱 MOBILE VIEW */
+@media (max-width: 768px) {
+
+  /* Nav */
+ nav{
+  padding:12px 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+ .menu-link{
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  background-color: #e14073;
+  cursor: pointer;
+ }
+ .mobile-book,.close-btn{
+  display: block;
+}
+
+ .book-div{
+  display: none;
+ }
+ .nav-links{
+  display: none;
+ }
+  
+  .nav-links.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset:0;
+    width: 100%;
+    height: 100vh;
+    background: #0a1124;
+    padding: 20px;
+    gap: 25px;
+    border-radius: 10px;
+    z-index: 99999;
+  
+  }
+.nav-links li{
+  list-style: none;
+  width: 50%;
+  text-align: center;
+}
+.nav-links a{
+  font-size: 22px;
+  color: #fff;
+
+}
+  /* Close button */
+  .close-btn i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #e14073;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: block;
+  }
+
+  /* Booking inside menu */
+  .mobile-book{
+    transition: all 0.3s ease;
+    background-color: #e14073;
+    padding: 12px 25px;
+    border-radius: 25px;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+  
+  }
+  .mobile-book a{
+    color: #fff;
+    font-size: 22px;
+  }
+  .mobile-book:hover{
+    background-color: #8f2a4a;
+    transform: scale(1.1);
+  }
+ 
+
+
+  /*--text box ---*/
+    .text-box h1{
+        font-size: 20px;
+    }
+
+     
+.row{
+    flex-direction: column;
+}
+
+
+
+ /* ABOUT SECTION FIX */
+ .about-container{
+        flex-direction: column;
+    }
+
+  .about-text{
+     font-size: 1.1rem;
+     line-height: 1.8rem;
+    
+    }
+
+  .about-img{
+     width: 100%;
+     padding-left: 0;
+     margin-top: 20px;
+      display: flex;
+     justify-content: center;
+    }
+    .about-img img{
+      width:200px;
+      height:200px;
+      border-radius: 50%;
+      object-fit: cover;
+      
+
+    }
+  
+
+  /* Footer--*/
+  #contact{
+    width: 100%;
+    padding: 20px 15px;
+
+    
+  }
+  .contact-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap:25px;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 15px;
+  }
+   .contact-info .info{
+    width: 100%;
+  }
+
+  .contact-info h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .contact-info p{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 6px 0;
+    color: #a8a4a4;
+  }
+
+  .social-icon{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .social-icon i{
+    font-size: 22px;
+  }
+
+}
+ 
+  
+ 
+
+   
+
+
+
+
+
+
+
+  
+
+
+ 

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stitching</title>
+    <link rel="stylesheet" href="bookstitching.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css "  rel="stylesheet">
+
+</head>
+<body>
+ 
+
+    <!-- Navigation -->
+
+  <section class="booking-section">
+   <div class="back-div">
+    <h1><a href="./index.html"><i class="fa-solid fa-arrow-left"></i>Back</a></h1>
+   </div>
+  <div class="booking-container">
+    <h2>Book Your Stitching</h2>
+
+    <form id="bookingForm">
+
+      <!-- Name -->
+      <div class="name-fields">
+        <div>
+          <label>First Name</label>
+          <input type="text" id="firstName" required placeholder="First Name">
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" id="lastName" required  placeholder="Last Name">
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <label>Phone Number</label>
+      <input type="tel" id="phone" required placeholder="Phone Number">
+
+      <!-- Email -->
+      <label>Email (optional)</label>
+      <input type="email" id="email" placeholder="Email">
+
+      <!-- Service + Size -->
+      <div class="service-size">
+        <div>
+          <label>Service</label>
+          <select id="service" required>
+            <option value="">Select Service</option>
+            <option>Kurta Pajama</option>
+            <option>Suit</option>
+            <option>Shirt</option>
+            <option>Pant</option>
+            <option>Uniform</option>
+            <option>Alteration</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Size</label>
+          <select id="size" required>
+            <option value="">Select Size</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>I will visit for measurement</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Fabric -->
+      <label>Fabric Type</label>
+      <select id="fabric">
+        <option>Customer Fabric</option>
+        <option>Tailor Fabric</option>
+      </select>
+
+      <!-- Dates -->
+      <label>Booking Date</label>
+      <input type="date" id="bookingDate" required>
+
+      <label>Delivery Date</label>
+      <input type="date" id="deliveryDate" required>
+
+      <!-- Notes -->
+      <label>Any Notes</label>
+      <textarea id="notes" placeholder="Design, fitting preference..."></textarea>
+
+      <!-- Button -->
+      <button type="submit">Book Now</button>
+      <p id="message"></p>
+
+    </form>
+  </div>
+
+</section>
+
+
+   
+     <!--whatsapp chat box-->
+       <section>
+<div id="whatsapp-chat">
+    <div id="chat-message">
+        <p>Hello! For any Queries ? Chat with us on WhatsApp.</p>
+        <a href="https://wa.me/7217472339" target="_blank">Start Chat</a>
+    </div>
+    <div id="chat-icon">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Chat"/>
+    </div>
+</div>
+       </section>
+ <!--sction contact footer --->
+ <footer>
+          <section Id="contact"  class="section-p1-m1">
+            <div class="contact-info">
+               
+            <div class="info">
+                  <h4>Support</h4>
+                <a href="contactus.html" target="_self"> <p>Contact us</p></a>
+                <a href="aboutus.html" target="_self" > <p> About Page</p></a>
+                  <p>Size Guid </p>
+                
+            </div>
+            <div class="info">
+                <h4> Stitching</h4>
+                <p>Men's Stiching</p>
+                <p> Casual Dresses</p>
+                <p> Formal<p>
+                <p>Dresses</p>
+                <p>Party Wear</p>
+            </div>
+            <div class="info">
+                 <h4>GET IN TOUCH</h4>
+                <p>Ajit Nager Gate Kheriya Mode<br> Vip Road Agra</p>
+                <p>7217472339</p>
+                <p>madrastailor@gmail.com</p>
+                <div class="social-icon">
+                <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+                 <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <p><span>©</span> 2025 Madras Tailor's. All Rights Reserved.</p>
+            <p> SOFTCODE  <span>AREEBA ZAHID </span> </p>
+        </section>
+
+</footer>
+<script src="booking.js"></script>
+</body>
+
+</html>

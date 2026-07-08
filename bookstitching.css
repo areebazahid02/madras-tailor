@@ -1,0 +1,339 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.back-div{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index: 10px;
+}
+.back-div a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    background: #081b29;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+.booking-section{
+ position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+    background: linear-gradient(
+    120deg,
+    #0f2027,
+    #203a43,
+    #2c5364,
+    #081b29,
+    #0f2027,
+    #3e3c3c
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+/*--background bhar ke ka key frame--*/
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.booking-container{
+  width: 100%;
+  max-width: 520px;
+  padding: 25px;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background: linear-gradient(
+    120deg,
+    #0f2027,
+    #203a43,
+    #2c5364,
+    #3e3c3c,
+    #0f2027,
+    #081b29
+  );
+    background-size: 300% 300%;
+   animation: gradientMove 12s ease infinite;
+
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.booking-container h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-container label{
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+.booking-container input,
+.booking-container select,
+.booking-container textarea{
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #3e3c3c;
+}
+
+.booking-container textarea{
+  resize: none;
+  height: 80px;
+}
+
+.name-fields,
+.service-size{
+  display: flex;
+  gap: 15px;
+}
+
+.name-fields div,
+.service-size div{
+  width: 100%;
+}
+
+.booking-container button{
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #e14073;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.booking-container button:hover{
+  background: #c92f5f;
+}
+
+/*--footer contact--*/
+
+/*--whats app chat box button--*/
+  #whatsapp-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+#chat-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+#chat-icon img:hover {
+    transform: scale(1.1);
+}
+
+#chat-message {
+    display: none; /* initially hidden */
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#chat-message a {
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #fff;
+    color: #25d366;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#chat-message a:hover {
+    background-color: #f1f1f1;
+}
+/*--niche footer section me contact ke information ka section hai--*/
+#contact{
+    width: 100%;
+   min-height: 50vh;
+    background-color: #081b29;
+    color: #fff;
+    padding:10px 10%;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+    gap: 30px;
+}
+.info p {
+    color: #fff;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.info a{
+    color: #fff;
+}
+/*--footer--*/
+   
+.copyright{
+    padding:20px 10%;
+    border:1px solid #3e3c3c;
+    background-color: #081b29;
+    text-align: center;
+
+
+}
+.copyright p{
+    padding: 5px;
+    color: #ddd;
+}
+
+/* Mobile Fix */
+@media (max-width: 700px){
+  .name-fields,
+  .service-size{
+    flex-direction: column;
+  }
+
+
+  /* 1️⃣ Back Button Fix */
+  .back-div{
+    top: 10px;
+    left: 10px;
+  }
+
+  .back-div a{
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  /* 2️⃣ Booking Section Padding Fix */
+  .booking-section{
+    padding: 10%;
+  }
+
+  /* 3️⃣ Booking Box Size Fix */
+  .booking-container{
+    max-width: 100%;
+    padding: 20px 10%;
+    border-radius: 12px;
+  }
+
+  .booking-container h2{
+    font-size: 20px;
+  }
+
+  /* 4️⃣ Inputs Text Size */
+  .booking-container input,
+  .booking-container select,
+  .booking-container textarea{
+    font-size: 13px;
+    padding: 9px;
+  }
+
+  /* 5️⃣ Button Size */
+  .booking-container button{
+    font-size: 15px;
+    padding: 11px;
+  }
+
+  /* 6️⃣ 2 Column → 1 Column */
+  .name-fields,
+  .service-size{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* 7️⃣ WhatsApp Icon Smaller */
+  #chat-icon img{
+    width: 50px;
+    height: 50px;
+  }
+
+  #chat-message{
+    width: 170px;
+    font-size: 13px;
+  }
+
+  /* 8️⃣ Footer Contact Stack */
+  #contact{
+    padding: 20px 5%;
+    text-align: center;
+  }
+
+  .contact-info{
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  .info h4{
+    font-size: 16px;
+  }
+
+  .info p{
+    font-size: 14px;
+  }
+
+  /* 9️⃣ Copyright Text Fix */
+  .copyright{
+    padding: 15px 5%;
+  }
+
+  .copyright p{
+    font-size: 13px;
+  }
+}
+
+
+
+    
