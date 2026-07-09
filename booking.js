@@ -38,7 +38,7 @@ bookingForm.addEventListener("submit", async (e) => {
 }
 
     try {
-        const res = await fetch("http://localhost:5000/api/booking", {
+        const res = await fetch("https://madras-tailor-backend.onrender.com/api/booking", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
