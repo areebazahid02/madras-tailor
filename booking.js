@@ -3,25 +3,39 @@ const bookingForm = document.getElementById("bookingForm");
 const message = document.getElementById("message");
 
 bookingForm.addEventListener("submit", async (e) => {
-    e.preventDefault(); // Page reload na ho
+    e.preventDefault(); 
+    console.log("form submitted");
 
     // Form data collect
     const formData = {
-        firstName: document.getElementById("firstName").value.trim(),
-        lastName: document.getElementById("lastName").value.trim(),
-        email: document.getElementById("email").value.trim(),
-        phone: document.getElementById("phone").value.trim(),
-        date: document.getElementById("date").value,
-        service: document.getElementById("service").value,
-        size: document.getElementById("size").value
-    };
+    firstName: document.getElementById("firstName").value.trim(),
+    lastName: document.getElementById("lastName").value.trim(),
+    phone: document.getElementById("phone").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    service: document.getElementById("service").value,
+    size: document.getElementById("size").value,
+    fabric: document.getElementById("fabric").value,
+    bookingDate: document.getElementById("bookingDate").value,
+    deliveryDate: document.getElementById("deliveryDate").value,
+    notes: document.getElementById("notes").value.trim()
+};
+    
 
     // Basic validation (optional)
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.date || !formData.service || !formData.size) {
-        message.style.color = "red";
-        message.textContent = "Please fill all required fields!";
-        return;
-    }
+   if (
+    !formData.firstName ||
+    !formData.lastName ||
+    !formData.phone ||
+    !formData.service ||
+    !formData.size ||
+    !formData.bookingDate ||
+    !formData.deliveryDate
+    
+) {
+    message.style.color = "red";
+    message.textContent = "Please fill all required fields!";
+    return;
+}
 
     try {
         const res = await fetch("http://localhost:5000/api/booking", {
