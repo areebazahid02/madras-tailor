@@ -279,8 +279,8 @@ nav ul li a{
  
  #product .product-col img{
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 400px;
+  object-fit: contain;
   border-radius: 20px;
   display: block;
 }
@@ -535,20 +535,22 @@ nav ul li a{
   #product .product-container{
     grid-template-columns: 1fr;
     padding: 20px 15px;
-    gap: 15px;
-    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
   }
 
   #product .product-col{
    
-    margin: 10px 0;
+    margin: 0;
     padding: 10px;
+    border-radius: 18px;
     
   }
   #product .product-col img{
     width: 100%;
-    height: 300px;      /* mobile ke liye fixed height */
-    object-fit: cover; /* equal + clean look */
+    height: auto;      /* mobile ke liye fixed height */
+    object-fit: contain; /* equal + clean look */
+    border-radius: 15px;
   }
 
     /* --- Contact / About / Support spacing fix */
