@@ -31,9 +31,15 @@ body{
 }
 
 /* Logo */
-.logo img{
-  height: 60px;
-  object-fit: contain;
+.logo h3{
+  color: #8f2a4a;
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 700;
+     background: linear-gradient(90deg,#ffd700, #8B0000,#ffd700, #C2185B, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* NAV BAR */
